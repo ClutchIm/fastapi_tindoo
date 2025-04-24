@@ -10,7 +10,7 @@ services:
     depends_on:
       - auth_db
     volumes:
-      - .:/auth
+      - .:/app
     networks:
       - backend
 

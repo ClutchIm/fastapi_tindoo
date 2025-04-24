@@ -8,13 +8,13 @@ from pydantic_settings import SettingsConfigDict, BaseSettings
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file=["../../../.env", "../../.env"],
+        env_file=["../.env", ".env"],
         env_ignore_empty=True,
     )
 
     # Database
     POSTGRES_HOST: str
-    POSTGRES_PORT: int = 465
+    POSTGRES_PORT: int = 5432
     POSTGRES_USER: str
     POSTGRES_PASS: str
     POSTGRES_DB: str
